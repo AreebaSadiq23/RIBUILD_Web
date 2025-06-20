@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowUpRight, Check } from "feather-icons-react";
+import { ArrowRight , Check } from "feather-icons-react";
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faArrowRight, faShareAlt, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
