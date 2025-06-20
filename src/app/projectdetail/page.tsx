@@ -13,6 +13,7 @@ import {
   faChevronLeft,
   faChevronRight,
   faArrowRight,
+  faArrowUpRightFromSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
@@ -170,7 +171,7 @@ export default function Page() {
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                   <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center text-white">
-                    <FontAwesomeIcon icon={faArrowRight} />
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                   </div>
                 </div>
                 {/* Residential Label on Hover */}

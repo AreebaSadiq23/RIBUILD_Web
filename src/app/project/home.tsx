@@ -3,7 +3,7 @@ import Header from '../components/Home-components/header';
 import { Button } from "@/components/ui/button";
 import { Home } from "feather-icons-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Projects() {
@@ -64,11 +64,11 @@ export default function Projects() {
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                   <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center text-white">
-                    <FontAwesomeIcon icon={faArrowRight} />
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                   </div>
                 </div>
                 {/* Residential Label on Hover */}
-                <div className="absolute bottom-0 left-0 w-full text-left text-sm text-white bg-black/60 py-2 opacity-0 group-hover:opacity-100 transition duration-300">
+                <div className="absolute bottom-0 left-0 w-full text-left text-sm text-white bg-black py-2 opacity-0 group-hover:opacity-100 transition duration-300">
                   <div className="text-lg font-semibold ml-4">
                     <h2>Residential</h2>
                     <h3>Home Construction</h3>

@@ -95,7 +95,7 @@ export default function Service() {
                 <div className="w-full lg:w-1/2 flex flex-col gap-8">
                     {/* Our Services */}
                     <div>
-                        <h3 className="text-lg font-semibold text-red-600">Our Services</h3>
+                        <h3 className="text-lg font-semibold text-orange-600">Our Services</h3>
                         <ul className="mt-4 flex flex-col gap-4">
                             {services.map((service, index) => (
                                 <li
@@ -116,7 +116,7 @@ export default function Service() {
                                 <p className="text-base leading-tight font-medium">
                                     Have any query<br />feel free contact our support team
                                 </p>
-                                <button className="mt-2 bg-red-600 text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-red-700">
+                                <button className="mt-2 bg-orange-600 roboto-font text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-red-700">
                                     Free Estimate
                                 </button>
                             </div>

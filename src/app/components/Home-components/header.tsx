@@ -41,7 +41,7 @@ const Header = () => {
           {/* Logo Box */}
           <div className="bg-white rounded-br-[40px] md:rounded-br-[60px] px-4 md:px-6 py-4 md:py-6 flex flex-row md:flex-col justify-between md:justify-center items-center md:items-start z-20 h-[80px] md:h-[110px] shadow-md w-full md:w-[250px]">
             <div className="flex items-center">
-              <Image src="/logo/logo.png" alt="Logo" width={40} height={40} className="md:w-[50px] md:h-[50px]" />
+              <Image src="/logo/logo.png" alt="Logo" width={50} height={40} className="md:w-[100px] md:h-[50px]" />
               <span className="ml-2 md:ml-3 font-bold text-lg md:text-xl text-gray-800 exo-font">RIBUILD</span>
             </div>
             {/* Hamburger for mobile */}

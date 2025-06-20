@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Header from "./header";
-
+import Link from "next/link";
 export default function HomeSection() {
   return (
     <>
@@ -34,12 +34,14 @@ export default function HomeSection() {
           </p>
           {/* Buttons */}
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 md:gap-6 ml-0 sm:ml-4 md:ml-20">
-            <Button className="text-xs sm:text-base px-3 sm:px-4 md:px-6 py-2 sm:py-3 bg-orange-600 text-white">
-              Get Quote
-            </Button>
-
+            <Link href="/error">
+              <Button className="text-xs sm:text-base px-3 cursor-pointer sm:px-4 md:px-6 py-2 sm:py-3 bg-orange-600 text-white">
+                Get Quote
+              </Button>
+            </Link>
+            
             <button className="flex items-center gap-2 mt-2 sm:mt-0">
-              <div className="w-8 h-8 sm:w-10 sm:h-12 rounded-full bg-white flex items-center justify-center">
+              <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-white flex items-center justify-center">
                 <Image src="/icons/play-button.png" alt="Play" width={16} height={16} />
               </div>
               <span className="text-white text-xs sm:text-base">Play Now</span>

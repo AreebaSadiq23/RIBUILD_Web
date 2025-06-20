@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Check } from "feather-icons-react";
+import { ArrowRight, ArrowUpRight, Check } from "feather-icons-react";
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faArrowRight, faShareAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle, faArrowRight, faShareAlt, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faFacebookF, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const SocialIcons = () => (
@@ -106,31 +106,32 @@ export default function About() {
           </div>
 
           {/* About Us Button */}
-          <Button className="bg-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base">
+          <Button 
+          className="bg-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base">
             About Us
           </Button>
         </div>
       </section>
 
-      {/* What We Do Section */}
-      <section className="w-full py-10 sm:py-14 md:py-20 px-3 sm:px-6 md:px-20 text-center">
+           {/* What We Do Section */}
+           <section className="w-full py-20 px-6 md:px-20 text-center">
         {/* Top Text + Button */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-8 sm:mb-12">
-          <div className="text-left mb-4 sm:mb-6 md:mb-0">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-12">
+          <div className="text-left mb-6 md:mb-0">
             <p className="text-orange-600 font-semibold uppercase exo-font">- What We Do</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold exo-font">
+            <h2 className="text-3xl md:text-4xl font-bold exo-font">
               Fully Integrated <br />Construction Service
             </h2>
           </div>
-          <Button className="bg-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 roboto-font text-sm sm:text-base">More About Us</Button>
+          <Button className="bg-orange-600 text-white px-6 py-3 roboto-font">More About Us</Button>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 text-left">
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
           {/* Card 1 */}
           <div className="bg-white rounded-2xl p-6 shadow">
             <div className="w-12 h-12 mb-4 text-orange-600">
-              <FontAwesomeIcon icon={faCheckCircle} size="2x" />
+              <Image src="/icons/card1.png" alt="Check" width={32} height={32} className="w-8 h-8" />
             </div>
             <h3 className="text-xl font-bold mb-2 exo-font">
               Interior Remodeling<br /> Transform Spaces.
@@ -159,7 +160,7 @@ export default function About() {
           {/* Card 3 */}
           <div className="bg-white rounded-2xl p-6 shadow">
             <div className="w-12 h-12 mb-4 text-orange-600">
-              <FontAwesomeIcon icon={faCheckCircle} size="2x" />
+              <Image src="/icons/card2.png" alt="Check" width={32} height={32} className="w-8 h-8" />
             </div>
             <h3 className="text-xl font-bold mb-2 exo-font">
               Roofing Solutions: Elevated<br /> Excellence
@@ -170,44 +171,49 @@ export default function About() {
           </div>
         </div>
       </section>
+
       {/* Stats Bar Section */}
-      <section className="w-full bg-[#15181B] text-white py-10 sm:py-14 md:py-16 px-3 sm:px-6 md:px-20">
-        <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 text-center md:text-left">
+      <section className="w-full bg-[#15181B] text-white py-16 px-6 md:px-20">
+        <div className="max-w-fit mx-auto flex flex-wrap justify-center items-center text-center gap-6 md:gap-20">
           {/* Stat 1 */}
-          <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-full bg-white text-orange-600 flex items-center justify-center text-xl">
-              <FontAwesomeIcon icon={faCheckCircle} />
-            </div>
+          <div className="flex items-center gap-4">
             <div>
-              <h3 className="text-3xl font-bold">1.2M+</h3>
-              <p className="text-sm text-gray-300 mt-1">Projects Done</p>
+              <h3 className="text-3xl font-bold exo-font">400+</h3>
+              <p className="text-sm mt-1 exo-font">Drilling Fields</p>
             </div>
           </div>
+
+          <span className="hidden md:inline text-gray-500 text-4xl font-light">|</span>
 
           {/* Stat 2 */}
-          <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-full bg-white text-orange-600 flex items-center justify-center text-xl">
-              <FontAwesomeIcon icon={faCheckCircle} />
-            </div>
+          <div className="flex items-center gap-4">
             <div>
-              <h3 className="text-3xl font-bold">51K+</h3>
-              <p className="text-sm text-gray-300 mt-1">Satisfied Clients</p>
+              <h3 className="text-3xl font-bold exo-font">290+</h3>
+              <p className="text-sm mt-1 exo-font">Expert Workers</p>
             </div>
           </div>
 
+          <span className="hidden md:inline text-gray-500 text-4xl font-light">|</span>
+
           {/* Stat 3 */}
-          <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-full bg-white text-orange-600 flex items-center justify-center text-xl">
-              <FontAwesomeIcon icon={faCheckCircle} />
-            </div>
+          <div className="flex items-center gap-4">
             <div>
-              <h3 className="text-3xl font-bold">25+</h3>
-              <p className="text-sm text-gray-300 mt-1">Years of Experience</p>
+              <h3 className="text-3xl font-bold exo-font">35+</h3>
+              <p className="text-sm mt-1 exo-font">Award Winner</p>
+            </div>
+          </div>
+
+          <span className="hidden md:inline text-gray-500 text-4xl font-light">|</span>
+
+          {/* Stat 4 */}
+          <div className="flex items-center gap-4">
+            <div>
+              <h3 className="text-3xl font-bold exo-font">25+</h3>
+              <p className="text-sm mt-1 exo-font">Years of Experience</p>
             </div>
           </div>
         </div>
       </section>
-
       {/* Latest Projects Section */}
       <section className="w-full bg-white py-10 sm:py-14 md:py-20 px-3 sm:px-6 md:px-20">
         {/* Header */}
@@ -220,7 +226,6 @@ export default function About() {
             It&apos;s always a joy that the work I do has positively impacted<br />
             our client and that they are happy to share their experience.
           </p>
-
         </div>
 
         {/* CTA aligned to right */}
@@ -261,11 +266,11 @@ export default function About() {
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                   <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center text-white">
-                    <FontAwesomeIcon icon={faArrowRight} />
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                   </div>
                 </div>
                 {/* Residential Label on Hover */}
-                <div className="absolute bottom-0 left-0 w-full text-left text-sm text-white bg-black/60 py-2 opacity-0 group-hover:opacity-100 transition duration-300">
+                <div className="absolute bottom-0 left-0 w-full text-left text-sm text-white bg-black py-2 opacity-0 group-hover:opacity-100 transition duration-300">
                   <div className="text-lg font-semibold ml-4">
                     <h2>Residential</h2>
                     <h3>Home Construction</h3>
