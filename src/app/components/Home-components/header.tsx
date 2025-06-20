@@ -68,7 +68,7 @@ const Header = () => {
                 <div className="flex items-center space-x-2">
                   <FontAwesomeIcon icon={faPhone} className="w-4 h-4 roboto-font" />
                   <span>(+245) 592 1125</span>
-                                  </div>
+                  </div>
                 <div className="flex items-center space-x-2">
                   <FontAwesomeIcon icon={faEnvelope} className="w-4 h-4 roboto-font" />
                   <span>info@ribuild.com</span>
@@ -136,12 +136,11 @@ const Header = () => {
               {/* Desktop Right Side */}
               <div className="hidden md:flex items-center space-x-3 md:space-x-4 mt-2 md:mt-0">
                 <FontAwesomeIcon icon={faMagnifyingGlass} className="w-5 h-5 cursor-pointer" />
-                <Button
-                  variant="default"
-                  className="bg-[#f6f6f6] text-orange-500 font-semibold px-3 md:px-4 py-1 md:py-1.5 hover:bg-orange-100 text-xs md:text-sm roboto-font"
-                >
-                  Get A Quote
-                </Button>
+                <Link href="/error">
+                  <Button asChild>
+                    <span>Get A Quote</span>
+                  </Button>
+                </Link>
               </div>
               {/* Mobile Nav */}
               <div className={`w-full md:hidden ${mobileMenuOpen ? "flex flex-col" : "hidden"} mt-2 space-y-2 transition-all duration-300`}>
@@ -161,12 +160,12 @@ const Header = () => {
                 <Link href="/contact" className="block px-2 py-2 rounded hover:bg-orange-100 hover:text-orange-500">Contact</Link>
                 <div className="flex items-center space-x-2 mt-2">
                   <FontAwesomeIcon icon={faMagnifyingGlass} className="w-5 h-5 cursor-pointer text-gray-700" />
-                  <Button
-                    variant="default"
+                  <Link
+                    href="/error"
                     className="bg-[#f6f6f6] text-orange-500 font-semibold px-3 py-1 hover:bg-orange-100 text-xs roboto-font"
                   >
                     Get A Quote
-                  </Button>
+                  </Link>
                 </div>
               </div>
             </nav>

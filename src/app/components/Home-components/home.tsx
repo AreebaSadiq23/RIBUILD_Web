@@ -32,7 +32,6 @@ export default function HomeSection() {
           <p className="text-[10px] sm:text-xs md:text-lg mb-4 sm:mb-6 md:mb-8 max-w-xs sm:max-w-xl ml-0 sm:ml-4 md:ml-20 roboto-font">
             We conduct all business with the highest standards of honesty and fairness, we can be trusted for consultation.
           </p>
-
           {/* Buttons */}
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 md:gap-6 ml-0 sm:ml-4 md:ml-20">
             <Button className="text-xs sm:text-base px-3 sm:px-4 md:px-6 py-2 sm:py-3 bg-orange-600 text-white">
