@@ -34,21 +34,21 @@ export default function Service() {
       {/* --- Contact Info Section --- */}
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 grid-cols-1 gap-6 px-6 py-10 text-center">
         <div className="flex flex-col items-center">
-          <img src="/icons/loct.png" alt="Location" className="w-12 h-12 mb-2" />
+          <Image src="/icons/loct.png" alt="Location" width={48} height={48} className="w-12 h-12 mb-2" />
           <h3 className="font-bold text-sm">Our Location</h3>
           <p className="text-xs text-gray-600">
             2801 Sanchester Dr. Richardson<br />California 62630
           </p>
         </div>
         <div className="flex flex-col items-center">
-          <img src="/icons/email.png" alt="Email" className="w-12 h-12 mb-2" />
+          <Image src="/icons/email.png" alt="Email" width={48} height={48} className="w-12 h-12 mb-2" />
           <h3 className="font-bold text-sm">Email Address</h3>
           <p className="text-xs text-gray-600">
             example@creative.co<br />info@creative.co
           </p>
         </div>
         <div className="flex flex-col items-center">
-          <img src="/icons/phone.png" alt="Phone" className="w-12 h-12 mb-2" />
+          <Image src="/icons/phone.png" alt="Phone" width={48} height={48} className="w-12 h-12 mb-2" />
           <h3 className="font-bold text-sm">Phone Number</h3>
           <p className="text-xs text-gray-600">
             01 (245) 325 362<br />01 (245) 325 363

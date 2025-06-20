@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -45,9 +46,11 @@ export default function Testimonials() {
           >
             {/* Image + Company + Stars */}
             <div className="flex items-center mb-4">
-              <img
+              <Image
                 src={t.image}
                 alt="Client"
+                width={56}
+                height={56}
                 className="rounded-full w-14 h-14 object-cover mr-4"
               />
               <div>

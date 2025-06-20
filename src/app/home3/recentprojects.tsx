@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type Project = {
   title: string;
@@ -35,9 +36,10 @@ const RecentProjects: React.FC = () => {
               className="relative group bg-gray-200 h-72 w-72 flex flex-col justify-end overflow-hidden rounded-md shadow-md"
             >
               {/* Project Image as background */}
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
+                fill
                 className="absolute inset-0 w-full h-full object-cover z-0"
               />
               <div className="absolute inset-0 bg-opacity-30 z-10 transition-opacity duration-300 group-hover:bg-opacity-40" />

@@ -4,29 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faPhone, faEnvelope, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 
 const ContactSection = () => {
-  const cards = [
-    {
-      icon: "/icons/phone.png",
-      title: "Phone Number",
-      text: "+012,389,079.50",
-    },
-    {
-      icon: "/icons/email.png",
-      title: "Email Address",
-      text: "intogessample.com",
-    },
-    {
-      icon: "/icons/location.png",
-      title: "Our Location",
-      text: "135 Siree( Nex) USA",
-    },
-    {
-      icon: "/icons/clock.png",
-      title: "Opening Hour",
-      text: "Mon-Fri 02:00 - 18:00",
-    },
-  ];
-
   return (
     <section className="relative bg-cover bg-center pt-24 pb-60 h-[500px] text-white" style={{ backgroundImage: "url('/images/img.png')" }}>
                <div className="max-w-7xl mx-auto px-6">
@@ -57,13 +34,13 @@ const ContactSection = () => {
           <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[-150px] w-full max-w-5xl bg-white text-black rounded-lg shadow-lg grid grid-cols-1 md:grid-cols-2 overflow-hidden">
             {/* Left Info */}
             <div className="p-8 lg:p-12 bg-[#ffe6e6]">
-              <p className="text-orange-600 font-medium mb-2 roboto-font">- Let's Talk</p>
+              <p className="text-orange-600 font-medium mb-2 roboto-font">- Let&apos;s Talk</p>
               <h2 className="text-2xl md:text-3xl font-bold mb-4 exo-font">
                 Have a Project in Mind? <br /> Contact With Us
               </h2>
               <p className="text-gray-600 mb-6 mt-5 roboto-font">
                 If you are going to use a passage of Lorem Ipsum, you need this
-                to be sure there isn't anything embarrassing hidden.
+                to be sure there isn&apos;t anything embarrassing hidden.
               </p>
               <div className="flex items-center gap-4">
                 <Image

@@ -68,11 +68,11 @@ export default function About() {
         <div className="w-full">
           <p className="text-orange-600 font-semibold uppercase mb-4 exo-font">- About Us</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 exo-font">
-            A Company To Change <br /> The world We're Driller <br /> Industrial
+            A Company To Change <br /> The world We&apos;re Driller <br /> Industrial
           </h2>
           <p className="text-gray-600 mb-8 roboto-font">
             Proactively pontificate client-centered realtionships vis-a-vis process <br /> centric
-            leadership skills Credibly maintain focoused internal<br /> or "organic"  source rather
+            leadership skills Credibly maintain focoused internal<br /> or &quot;organic&quot;  source rather
             than vertical alignments.
           </p>
 

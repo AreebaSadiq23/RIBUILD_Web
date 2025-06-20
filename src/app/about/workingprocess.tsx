@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const WorkingProcess = () => {
   return (
@@ -38,28 +39,28 @@ const WorkingProcess = () => {
 
             {[
               {
-                icon: <img src="/icons/p2.png" alt="Search" className="w-8 h-8" />,
+                icon: <Image src="/icons/p2.png" alt="Search" width={32} height={32} className="w-8 h-8" />,
                 label: "Product Research",
                 text: "Lorem ipsum dolor sit amet, adipiscing elit. sed do eiusmod tempor",
                 color: "bg-gray-100",
                 number: 1
               },
               {
-                icon: <img src="/icons/p1.png" alt="Design" className="w-8 h-8" />,
+                icon: <Image src="/icons/p1.png" alt="Design" width={32} height={32} className="w-8 h-8" />,
                 label: "Design Idea",
                 text: "Lorem ipsum dolor sit amet, adipiscing elit. sed do eiusmod tempor",
                 color: "bg-gray-100",
                 number: 2
               },
               {
-                icon: <img src="/icons/p4.png" alt="Advice" className="w-8 h-8" />,
+                icon: <Image src="/icons/p4.png" alt="Advice" width={32} height={32} className="w-8 h-8" />,
                 label: "Advice & guides",
                 text: "Lorem ipsum dolor sit amet, adipiscing elit.  sed do eiusmod tempor",
                 color: "bg-gray-100",
                 number: 3
               },
               {
-                icon: <img src="/icons/p3.png" alt="Solution" className="w-8 h-8" />,
+                icon: <Image src="/icons/p3.png" alt="Solution" width={32} height={32} className="w-8 h-8" />,
                 label: "Great Solutions",
                 text: "Lorem ipsum dolor sit amet, adipiscing elit. sed do eiusmod tempor",
                 color: "bg-gray-100",

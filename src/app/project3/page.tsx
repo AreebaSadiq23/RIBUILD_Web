@@ -58,9 +58,10 @@ export default function Project3() {
                   className="relative group bg-white h-80 w-80 flex flex-col justify-end overflow-hidden rounded-2xl shadow-xl border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-2xl mx-auto"
                 >
                   {/* Project Image as background */}
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
+                    fill
                     className="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/30 z-10 transition-opacity duration-300 group-hover:bg-black/40" />

@@ -1,14 +1,9 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "../components/Home-components/header";
 import Image from "next/image";
 import Footer from "../servicesdetails/footer";
-
-
-const cards = Array(6).fill(null);
 
 export default function ProjectTwo() {
     return (

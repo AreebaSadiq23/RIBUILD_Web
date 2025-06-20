@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface Service {
   title: string;
@@ -56,7 +57,7 @@ const EfficientSolutions: React.FC = () => {
             className={`flex items-start gap-5 bg-white border border-gray-200 rounded-xl shadow-md p-6 transition-transform hover:scale-105 ${service.highlight ? 'relative pb-6' : ''}`}
           >
             <div>
-              <img src={service.icon} alt={service.title} className={`w-10 h-10 ${service.highlight ? 'grayscale-0' : 'grayscale'}`} />
+              <Image src={service.icon} alt={service.title} width={40} height={40} className={`w-10 h-10 ${service.highlight ? 'grayscale-0' : 'grayscale'}`} />
             </div>
             <div>
               <h3
