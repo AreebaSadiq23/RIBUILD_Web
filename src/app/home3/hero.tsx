@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -10,16 +11,20 @@ const Home = () => {
       <div className="absolute bottom-0 right-0 w-full h-32 bg-orange-500 z-0 clip-path-diagonal" />
 
       {/* === Left-bottom vector decoration === */}
-      <img
+      <Image
         src="/logo/vector_2.png"
         alt="left vector"
+        width={220}
+        height={100}
         className="absolute bottom-0 left-0 w-[220px] z-0"
       />
 
       {/* === Right-top vector decoration === */}
-      <img
+      <Image
         src="/logo/vector.png"
         alt="right top vector"
+        width={300}
+        height={120}
         className="absolute right-0 w-[300px] z-0"
       />
 

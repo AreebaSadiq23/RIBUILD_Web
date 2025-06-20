@@ -3,6 +3,7 @@ import Header from '../components/Home-components/header';
 import { Button } from "@/components/ui/button";
 import { Home } from "feather-icons-react";
 import Footer from '../servicesdetails/footer';
+import Link from "next/link";
 
 export default function Error() {
   return (
@@ -45,7 +46,7 @@ export default function Error() {
           className="bg-orange-600 text-white px-8 py-3 text-lg font-semibold rounded hover:bg-orange-700 transition"
           asChild
         >
-          <a href="/">Back to Home</a>
+          <Link href="/">Back to Home</Link>
         </Button>
       </div>
       <Footer />

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarAlt, faUser, faComments, faSearch, faArrowLeft, faArrowRight, faQuoteRight, faAngleDoubleLeft, faAngleDoubleRight, faReply, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt, faUser, faComments, faSearch, faQuoteRight, faAngleDoubleLeft, faAngleDoubleRight, faReply, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faFacebookF, faLinkedinIn, faPinterestP } from '@fortawesome/free-brands-svg-icons';
 import { Button } from "@/components/ui/button";
 import {  Home } from "feather-icons-react";
@@ -37,7 +37,7 @@ export default function BlogDetailSection() {
     <div className="w-full px-4 md:px-10 lg:px-20 py-10 bg-white text-[#2f2f2f] grid grid-cols-1 lg:grid-cols-3 gap-8">
       {/* Blog Content */}
       <div className="lg:col-span-2">
-        <img src="/logo/blog.jpg" alt="blog" className="w-full h-[300px] object-cover rounded" />
+        <Image src="/logo/blog.jpg" alt="blog" width={1200} height={300} className="w-full h-[300px] object-cover rounded" />
 
         <div className="flex items-center gap-6 text-sm text-gray-500 mt-4">
           <div className="flex items-center gap-1"><FontAwesomeIcon icon={faUser} className='text-orange-500'/>By Admin</div>
@@ -62,7 +62,7 @@ export default function BlogDetailSection() {
         <div className="flex flex-col md:flex-row items-start gap-6 mb-6">
           {/* Left Image */}
           <div className="flex-shrink-0 w-full md:w-1/3">
-            <img src="/images/cons1.jpg" alt="Construction" className="w-full h-48 object-cover rounded" />
+            <Image src="/images/cons1.jpg" alt="Construction" width={400} height={192} className="w-full h-48 object-cover rounded" />
           </div>
           {/* Right Points */}
           <div className="flex-1">

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import Image from "next/image";
 
 const teamMembers = [
   { name: "Alex Jonison", title: "UI/UX Designer", image: "/images/blo.jpg" },
@@ -37,9 +38,11 @@ export default function TeamAndFAQSection() {
               +
             </button>
             <div className="w-full h-48 overflow-hidden">
-              <img
+              <Image
                 src={member.image}
                 alt={member.name}
+                width={240}
+                height={192}
                 className="w-full h-full object-cover"
               />
             </div>

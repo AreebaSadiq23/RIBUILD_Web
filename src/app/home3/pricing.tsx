@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 interface Feature {
   label: string;
@@ -72,7 +73,7 @@ const PricingSection: React.FC = () => {
             }`}
           >
             <div className="mb-6 flex justify-start">
-              <img src="/icons/home.png" alt="icon" className="w-12 h-12" />
+              <Image src="/icons/home.png" alt="icon" width={48} height={48} className="w-12 h-12" />
             </div>
 
             <h3 className="text-2xl font-bold mb-2 text-left exo-font">{plan.price}</h3>
@@ -88,13 +89,15 @@ const PricingSection: React.FC = () => {
                     feature.available ? '' : 'text-gray-400 line-through'
                   }`}
                 >
-                  <img
+                  <Image
                     src={
                       feature.available
                         ? 'https://cdn-icons-png.flaticon.com/512/190/190411.png'
                         : 'https://cdn-icons-png.flaticon.com/512/1828/1828843.png'
                     }
                     alt="status"
+                    width={16}
+                    height={16}
                     className="w-4 h-4"
                   />
                   {feature.label}

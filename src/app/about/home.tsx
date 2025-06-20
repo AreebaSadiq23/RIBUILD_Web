@@ -136,7 +136,7 @@ export default function About() {
           {/* Card 1 */}
           <div className="bg-white rounded-2xl p-6 shadow">
             <div className="w-12 h-12 mb-4 text-orange-600">
-              <img src="/icons/card1.png" alt="Check" className="w-8 h-8" />
+              <Image src="/icons/card1.png" alt="Check" width={32} height={32} className="w-8 h-8" />
             </div>
             <h3 className="text-xl font-bold mb-2 exo-font">
               Interior Remodeling<br /> Transform Spaces.
@@ -165,7 +165,7 @@ export default function About() {
           {/* Card 3 */}
           <div className="bg-white rounded-2xl p-6 shadow">
             <div className="w-12 h-12 mb-4 text-orange-600">
-              <img src="/icons/card2.png" alt="Check" className="w-8 h-8" />
+              <Image src="/icons/card2.png" alt="Check" width={32} height={32} className="w-8 h-8" />
             </div>
             <h3 className="text-xl font-bold mb-2 exo-font">
               Roofing Solutions: Elevated<br /> Excellence

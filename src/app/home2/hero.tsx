@@ -85,18 +85,22 @@ const Hero = () => {
 
             {/* Top right square image */}
             <div className="absolute -top-10 -right-10 w-50 h-60 bg-gray-300 rounded-md overflow-hidden shadow-xl z-0">
-              <img
+              <Image
                 src="/images/roof2.jpg"
                 alt="Roofing Work"
+                width={200}
+                height={240}
                 className="w-full h-full object-cover"
               />
             </div>
 
             {/* Main square image (Front) */}
             <div className="w-64 h-70 md:h-92 md:w-70 bg-gray-300 rounded-md relative z-10">
-              <img
+              <Image
                 src="/images/roof.jpg"
                 alt="Roofing Service"
+                width={256}
+                height={280}
                 className="w-full h-full object-cover rounded-md"
               />
 
@@ -126,11 +130,11 @@ const Hero = () => {
 
           <div className="flex flex-wrap gap-6">
             <div className="flex items-center gap-2">
-              <img src="/icons/award.png" alt="Award" className="w-6 h-6 [filter:invert(48%)_sepia(79%)_saturate(2476%)_hue-rotate(346deg)_brightness(118%)_contrast(119%)]" />
+              <Image src="/icons/award.png" alt="Award" width={24} height={24} className="w-6 h-6 [filter:invert(48%)_sepia(79%)_saturate(2476%)_hue-rotate(346deg)_brightness(118%)_contrast(119%)]" />
               <span className="font-medium text-md text-black roboto-font">Certified & Awards <br /> winner</span>
             </div>
             <div className="flex items-center gap-2">
-              <img src="/icons/champion.png" alt="Quality" className="w-8 h-8 [filter:invert(48%)_sepia(79%)_saturate(2476%)_hue-rotate(346deg)_brightness(118%)_contrast(119%)]" />
+              <Image src="/icons/champion.png" alt="Quality" width={32} height={32} className="w-8 h-8 [filter:invert(48%)_sepia(79%)_saturate(2476%)_hue-rotate(346deg)_brightness(118%)_contrast(119%)]" />
               <span className="font-medium text-md text-black roboto-font">Best Quality <br /> Services</span>
             </div>
           </div>
@@ -144,7 +148,7 @@ const Hero = () => {
               Discover More
             </button>
             <div className="flex items-center gap-2">
-              <img src="/logo/sign.png" alt="Signature" className="h-10" />
+              <Image src="/logo/sign.png" alt="Signature" width={80} height={40} className="h-10" />
             </div>
           </div>
         </div>
