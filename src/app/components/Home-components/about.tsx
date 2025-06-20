@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowUpRight, Check } from "feather-icons-react";
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faArrowRight, faShareAlt, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import {  faArrowRight, faShareAlt, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faFacebookF, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const SocialIcons = () => (

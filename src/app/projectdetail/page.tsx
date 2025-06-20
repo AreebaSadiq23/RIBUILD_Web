@@ -12,7 +12,6 @@ import {
   faLink,
   faChevronLeft,
   faChevronRight,
-  faArrowRight,
   faArrowUpRightFromSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import {

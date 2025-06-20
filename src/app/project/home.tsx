@@ -3,7 +3,7 @@ import Header from '../components/Home-components/header';
 import { Button } from "@/components/ui/button";
 import { Home } from "feather-icons-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Projects() {
