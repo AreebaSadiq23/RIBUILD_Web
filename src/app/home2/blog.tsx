@@ -56,11 +56,11 @@ const BlogSection: React.FC = () => {
               <div className="p-6 text-left">
                 <div className={`flex items-center text-sm mb-3 gap-4 ${index === 1 ? 'text-[#FF4500]' : 'text-gray-500'}`}>
                   <div className="flex items-center gap-1">
-                    <img src="/icons/person.png" alt="user" className="w-4 h-4 filter-orange" />
+                    <Image src="/icons/person.png" alt="user" width={16} height={16} className="w-4 h-4 filter-orange" />
                     <span>{post.author}</span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <img src="/icons/calendar.png" alt="calendar" className="w-4 h-4 filter-orange" />
+                    <Image src="/icons/calendar.png" alt="calendar" width={16} height={16} className="w-4 h-4 filter-orange" />
                     <span>{post.date}</span>
                   </div>
                 </div>

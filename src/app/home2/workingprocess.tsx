@@ -26,7 +26,7 @@ export default function WorkingProcessSection() {
 
         {/* Steps */}
         <div className="space-y-8 mt-4">
-          {[1, 2, 3].map((step, index) => (
+          {[1, 2, 3].map((step) => (
             <div key={step} className="flex items-start space-x-4 relative">
               {/* Left side: Circle and line */}
               <div className="flex flex-col items-center">
