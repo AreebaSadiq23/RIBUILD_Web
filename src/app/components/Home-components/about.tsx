@@ -25,11 +25,11 @@ const SocialIcons = () => (
 export default function About() {
   return (
     <>
-      <section className="w-full bg-white py-20 px-6 md:px-20 flex flex-col md:flex-row gap-10 items-center">
+      <section className="w-full bg-white py-10 sm:py-14 md:py-20 px-3 sm:px-6 md:px-20 flex flex-col md:flex-row gap-6 md:gap-10 items-center">
         {/* Left Images Stack */}
-        <div className="flex w-full items-start justify-center gap-6 p-6 bg-cover bg-center" style={{ backgroundImage: 'url("/images/bg.png")' }}>
+        <div className="flex w-full flex-col sm:flex-row items-start justify-center gap-4 sm:gap-6 p-3 sm:p-6 bg-cover bg-center" style={{ backgroundImage: 'url("/images/bg.png")' }}>
           {/* Left Image with Circular Play Icon */}
-          <div className="w-[200px] h-[280px] rounded-tl-[48px] rounded-br-[48px] overflow-hidden relative mt-20 border-4 border-white">
+          <div className="w-full sm:w-[180px] md:w-[200px] h-[220px] sm:h-[260px] md:h-[280px] rounded-tl-[32px] md:rounded-tl-[48px] rounded-br-[32px] md:rounded-br-[48px] overflow-hidden relative mt-6 sm:mt-20 border-4 border-white">
             <Image src="/images/img4.jpg" alt="Image 1" fill className="object-cover" />
 
             {/* Play Icon Overlay - Circle */}
@@ -48,30 +48,30 @@ export default function About() {
           </div>
 
           {/* Right side: image 2 & 3 stacked vertically */}
-          <div className="flex flex-col gap-6">
-            <div className="w-[200px] h-[200px] rounded-tl-[48px] rounded-br-[48px] overflow-hidden relative border-4 border-white">
+          <div className="flex flex-row sm:flex-col gap-4 sm:gap-6">
+            <div className="w-[100px] sm:w-[180px] md:w-[200px] h-[100px] sm:h-[180px] md:h-[200px] rounded-tl-[32px] md:rounded-tl-[48px] rounded-br-[32px] md:rounded-br-[48px] overflow-hidden relative border-4 border-white">
               <Image src="/images/img2.jpg" alt="Image 2" fill className="object-cover" />
             </div>
-            <div className="w-[200px] h-[200px] rounded-bl-[48px] rounded-tr-[48px] overflow-hidden relative border-4 border-white">
+            <div className="w-[100px] sm:w-[180px] md:w-[200px] h-[100px] sm:h-[180px] md:h-[200px] rounded-bl-[32px] md:rounded-bl-[48px] rounded-tr-[32px] md:rounded-tr-[48px] overflow-hidden relative border-4 border-white">
               <Image src="/images/3.jpg" alt="Image 3" fill className="object-cover" />
             </div>
           </div>
         </div>
 
         {/* Right Content */}
-        <div className="w-full">
+        <div className="w-full mt-8 md:mt-0">
           <p className="text-orange-600 font-semibold uppercase mb-4 exo-font">- About Us</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 exo-font">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 exo-font">
             A Company To Change <br /> The world We&apos;re Driller <br /> Industrial
           </h2>
-          <p className="text-gray-600 mb-8 roboto-font">
+          <p className="text-gray-600 mb-6 sm:mb-8 roboto-font text-sm sm:text-base">
             Proactively pontificate client-centered realtionships vis-a-vis process <br /> centric
             leadership skills Credibly maintain focoused internal<br /> or &quot;organic&quot;  source rather
             than vertical alignments.
           </p>
 
           {/* Features */}
-          <div className="grid grid-cols-2 gap-6 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
             {/* Feature 1 */}
             <div className="flex items-center gap-4">
               <div className="w-10 h-10 border-2 border-orange-600 rounded-full flex items-center justify-center text-orange-600">
@@ -106,27 +106,27 @@ export default function About() {
           </div>
 
           {/* About Us Button */}
-          <Button className="bg-orange-600 text-white px-6 py-3">
+          <Button className="bg-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base">
             About Us
           </Button>
         </div>
       </section>
 
       {/* What We Do Section */}
-      <section className="w-full py-20 px-6 md:px-20 text-center">
+      <section className="w-full py-10 sm:py-14 md:py-20 px-3 sm:px-6 md:px-20 text-center">
         {/* Top Text + Button */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-12">
-          <div className="text-left mb-6 md:mb-0">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-8 sm:mb-12">
+          <div className="text-left mb-4 sm:mb-6 md:mb-0">
             <p className="text-orange-600 font-semibold uppercase exo-font">- What We Do</p>
-            <h2 className="text-3xl md:text-4xl font-bold exo-font">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold exo-font">
               Fully Integrated <br />Construction Service
             </h2>
           </div>
-          <Button className="bg-orange-600 text-white px-6 py-3 roboto-font">More About Us</Button>
+          <Button className="bg-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 roboto-font text-sm sm:text-base">More About Us</Button>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 text-left">
           {/* Card 1 */}
           <div className="bg-white rounded-2xl p-6 shadow">
             <div className="w-12 h-12 mb-4 text-orange-600">
@@ -171,8 +171,8 @@ export default function About() {
         </div>
       </section>
       {/* Stats Bar Section */}
-      <section className="w-full bg-[#15181B] text-white py-16 px-6 md:px-20">
-        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+      <section className="w-full bg-[#15181B] text-white py-10 sm:py-14 md:py-16 px-3 sm:px-6 md:px-20">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 text-center md:text-left">
           {/* Stat 1 */}
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 rounded-full bg-white text-orange-600 flex items-center justify-center text-xl">
@@ -209,12 +209,12 @@ export default function About() {
       </section>
 
       {/* Latest Projects Section */}
-      <section className="w-full bg-white py-20 px-6 md:px-20">
+      <section className="w-full bg-white py-10 sm:py-14 md:py-20 px-3 sm:px-6 md:px-20">
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-8 sm:mb-12">
           <div>
             <p className="text-orange-600 font-semibold uppercase exo-font">- Latest Projects</p>
-            <h2 className="text-3xl md:text-4xl font-bold exo-font">Our Recent Case Studies & <br /> Latest Success Stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold exo-font">Our Recent Case Studies & <br /> Latest Success Stories</h2>
           </div>
           <p className="text-gray-600 max-w-md roboto-font mt-4 md:mt-0 text-left md:text-right">
             It&apos;s always a joy that the work I do has positively impacted<br />
@@ -247,7 +247,7 @@ export default function About() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
           {[...Array(6)].map((_, i) => (
             <div key={i} className="group relative overflow-hidden rounded-2xl shadow hover:shadow-lg transition">
               {/* Image */}
@@ -278,14 +278,14 @@ export default function About() {
       </section>
 
       {/* Our Skill Section */}
-      <section className="w-full bg-white py-20 px-6 md:px-20 flex flex-col md:flex-row items-center gap-12">
+      <section className="w-full bg-white py-10 sm:py-14 md:py-20 px-3 sm:px-6 md:px-20 flex flex-col md:flex-row items-center gap-8 md:gap-12">
         {/* Left Content */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 mb-8 md:mb-0">
           <p className="text-orange-600 font-semibold uppercase mb-2 exo-font">- Our Skill</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 exo-font">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 exo-font">
             This Building Skill Member <br /> Meet ON Rent.
           </h2>
-          <p className="text-gray-600 text-base mb-10 roboto-font">
+          <p className="text-gray-600 text-sm sm:text-base mb-6 sm:mb-10 roboto-font">
             If you are going to use a passage of lorem ipsum, you nee this be sure<br />
             there isn&apos;t anything embrassing hidden in the best middle if text .All<br />
             the lorem ipsum genertors.
@@ -317,7 +317,7 @@ export default function About() {
         {/* Right Content - Square + Circle Image */}
         <div className="w-full md:w-1/2 flex justify-center relative">
           {/* Square Image with Orange Border */}
-          <div className="w-[300px] h-[300px] relative rounded-xl shadow-xl border-4 border-orange-600">
+          <div className="w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] md:w-[300px] md:h-[300px] relative rounded-xl shadow-xl border-4 border-orange-600">
             <div className="w-full h-full rounded-xl overflow-hidden">
               <Image
                 src="/projects/8.jpg"
@@ -328,7 +328,7 @@ export default function About() {
             </div>
 
             {/* Circle Image Positioned at Bottom-Left */}
-            <div className="absolute -bottom-6 -left-6 w-[150px] h-[150px] rounded-full border-4 border-white overflow-hidden shadow-lg z-10">
+            <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-[90px] h-[90px] sm:w-[120px] sm:h-[120px] md:w-[150px] md:h-[150px] rounded-full border-4 border-white overflow-hidden shadow-lg z-10">
               <Image
                 src="/projects/7.jpg"
                 alt="Circle Skill"
@@ -341,16 +341,16 @@ export default function About() {
 
       </section>
 
-      <section className="w-full bg-gray-100 py-20 px-6 md:px-20 text-center">
+      <section className="w-full bg-gray-100 py-10 sm:py-14 md:py-20 px-3 sm:px-6 md:px-20 text-center">
         {/* Section Heading */}
         <p className="text-orange-600 font-semibold uppercase exo-font mb-2">- Work People -</p>
-        <h2 className="text-3xl md:text-4xl font-bold exo-font mb-12">Our Awesome Creative Best<br /> Team Members</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold exo-font mb-8 sm:mb-12">Our Awesome Creative Best<br /> Team Members</h2>
 
         {/* Cards */}
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
           {/* Card 1 */}
-          <div className="relative bg-white rounded-2xl shadow overflow-hidden text-left w-[280px]">
-            <div className="w-full h-[280px] relative">
+          <div className="relative bg-white rounded-2xl shadow overflow-hidden text-left w-full max-w-[280px]">
+            <div className="w-full h-[220px] sm:h-[260px] md:h-[280px] relative">
               <Image
                 src="/images/1.jpg"
                 alt="Person 1"
@@ -373,8 +373,8 @@ export default function About() {
           </div>
 
           {/* Card 2 */}
-          <div className="relative bg-white rounded-2xl shadow overflow-hidden text-left w-[280px]">
-            <div className="w-full h-[280px] relative">
+          <div className="relative bg-white rounded-2xl shadow overflow-hidden text-left w-full max-w-[280px]">
+            <div className="w-full h-[220px] sm:h-[260px] md:h-[280px] relative">
               <Image
                 src="/images/2.jpg"
                 alt="Person 2"
@@ -397,8 +397,8 @@ export default function About() {
           </div>
 
           {/* Card 3 */}
-          <div className="relative bg-white rounded-2xl shadow overflow-hidden text-left w-[280px]">
-            <div className="w-full h-[280px] relative">
+          <div className="relative bg-white rounded-2xl shadow overflow-hidden text-left w-full max-w-[280px]">
+            <div className="w-full h-[220px] sm:h-[260px] md:h-[280px] relative">
               <Image
                 src="/images/i3.jpg"
                 alt="Person 3"

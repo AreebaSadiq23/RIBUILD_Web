@@ -5,8 +5,8 @@ import { faCalendarAlt, faArrowRight, faChevronLeft, faChevronRight, faStar, faQ
 
 const TestimonialsAndBlog: React.FC = () => {
   return (
-    <section className="bg-white px-4 py-16 flex justify-center mt-24">
-      <div className=" w-full max-w-5xl px-6 py-8">
+    <section className="bg-white px-2 sm:px-4 py-10 sm:py-16 flex justify-center mt-12 sm:mt-24">
+      <div className="w-full max-w-5xl px-2 sm:px-6 py-6 sm:py-8">
         {/* Top Heading */}
         <div className="text-center mb-8">
           <p className="text-orange-500 text-sm font-semibold underline underline-offset-4 mb-1 roboto-font">Testimonial</p>
@@ -14,7 +14,7 @@ const TestimonialsAndBlog: React.FC = () => {
         </div>
 
         {/* Card */}
-        <div className="flex flex-col md:flex-row items-start gap-6 relative">
+        <div className="flex flex-col md:flex-row items-start gap-4 sm:gap-6 relative">
           {/* Left Image */}
           <div className="w-full md:w-1/2 h-64 relative rounded-md overflow-hidden">
             <Image
@@ -57,7 +57,7 @@ const TestimonialsAndBlog: React.FC = () => {
         </div>
 
         {/* Blog section */}
-        <div className="flex items-center justify-between mb-8 mt-16">
+        <div className="flex flex-col sm:flex-row items-center justify-between mb-6 sm:mb-8 mt-10 sm:mt-16 gap-4 sm:gap-0">
           <div>
             <p className="text-orange-600 font-medium roboto-font">— Trending Topics —</p>
             <h2 className="text-2xl md:text-3xl font-bold exo-font">Latest Articles & Blog Posts</h2>
@@ -73,7 +73,7 @@ const TestimonialsAndBlog: React.FC = () => {
         </div>
 
         {/* Blog Posts */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {[
             {
               title: "Construction Begins On New Office Building",
@@ -127,11 +127,11 @@ const TestimonialsAndBlog: React.FC = () => {
         </div>
 
         {/* Our Clients Section */}
-        <div className="mt-24 text-center">
+        <div className="mt-12 sm:mt-24 text-center">
           <p className="text-orange-600 font-medium mb-2 roboto-font">— Our Clients —</p>
           <h2 className="text-2xl md:text-3xl font-bold mb-8 exo-font">Awarding winning clients</h2>
 
-          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-20">
+          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-20">
             {["logo-2.png", "logo-1.png", "logo-5.png", "logo-3.png", "logo-4.png"].map((logo, index) => (
               <div key={index} className="w-28 h-16 relative">
                 <Image
