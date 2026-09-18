@@ -26,7 +26,6 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-feather": "^2.0.10",
-    "react-router-dom": "^7.6.2",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
